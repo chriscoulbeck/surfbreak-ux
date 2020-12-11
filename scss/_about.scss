@@ -1,0 +1,18 @@
+.about-section  {
+    margin: 100px 0;
+}
+
+.about {   
+    max-width: 1100px;
+    margin: auto;
+    &__content {
+        padding: 10px;
+    }
+    &__subheader {
+        font-weight: 200;
+    }
+    &__header {
+        font-size: 2em;
+    }
+
+}

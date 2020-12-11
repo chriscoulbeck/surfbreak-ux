@@ -1,0 +1,124 @@
+/* Header */
+ 
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fafafa;
+    height: 10vh;
+}
+
+.nav-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1100px;
+    margin: auto;
+    height: 100%;
+}
+
+.site-branding {
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-logo {
+    border-radius: 50%;
+    background-color: lightblue;
+    height: 50px;
+    width: 50px;
+}
+
+.menu, .close {
+    font-size: 35px;
+    float: right;
+    margin: 10px;
+}
+
+.main-navigation {
+    height: 100%;
+    & ul {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        & li   {
+            text-transform: uppercase;
+            font-weight: 300;
+            font-size: 12px;
+            & a {
+                display: flex;
+                align-items: center;
+                margin: 0 15px;
+                &:hover {
+                    color: orange;
+                }
+            }
+           
+        }
+    }
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+.menu-label {
+    display: none;
+}
+
+
+
+@media (max-width: 600px) {
+
+    .nav-wrapper {
+        width: 100%
+    }
+
+    .is-hidden {
+        display: none;
+    }
+
+    .site-branding {
+        width: 100%;
+    }
+
+
+    .menu-label {
+        display: block;
+    }
+
+    .main-navigation {
+        height: auto;    
+        & ul {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 10vh;
+            left: 0;
+            width: 100%;
+            height: auto;
+            background-color: rgb(59, 61, 68);
+            &  li {
+                width: 100%;
+                border-bottom: 1px solid rgb(73, 73, 73);
+            }
+            & li a {
+                color: #fafafa;
+                margin: 0px;
+                width: 100%;
+                padding: 20px;
+                height: 100%;
+                
+                &:active {
+                    background-color: rgb(77, 80, 88)
+                }
+            }
+        }
+    }
+}
+
+/* Page Wrapper */
+
+/* Feature */
+
+/* About */

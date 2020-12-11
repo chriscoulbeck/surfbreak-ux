@@ -1,0 +1,35 @@
+footer {
+    background-color: #fafafa;
+}
+footer > div {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    min-height: 100px;
+    padding: 25px;
+    max-width: 1100px;
+    margin: auto;
+    color: #fafafa;
+    & h3 {
+        color: rgb(65, 63, 63);
+        font-size: 16px;
+    }
+    & span {
+        font-size: 10px;
+    }
+}
+
+.fb-icon {
+    font-size: 24px;
+    margin-right: 25px;
+}
+
+.soc {
+    font-size: 16px;
+    font-weight: 200;
+}
+
+.footer-nav {
+    display: flex;
+    align-items: center;
+}
