@@ -5,3 +5,14 @@
 @import 'about';
 @import 'blog';
 @import 'footer';
+@import 'campaign';
+
+.index-left {
+    flex: 2;
+}
+
+.index-right {
+    flex: 1;
+    margin: 15px;
+}
+

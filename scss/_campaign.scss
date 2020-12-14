@@ -1,0 +1,66 @@
+.campaign-banner {
+    display: flex;
+}
+
+.campaign-media {
+    background: url("/dist/assets/images/beach-2.jpg");
+    background-size: cover;
+    height: 400px;
+    flex: 1;
+
+}
+
+.banner-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    padding: 3em;
+    background-color: rgb(238, 238, 238);
+    & p {
+        margin-bottom: 1em;
+    }
+}
+
+.banner-content h1 {
+    font-size: 2em;
+    font-weight: 400;
+}
+.btn--campaign {
+    border: 1px solid #000;
+    color: #000;
+    width: 100%;
+    background: none;
+    padding: .8em;
+    text-align: center;
+    &:hover {
+        background-color: rgb(22, 22, 22);
+        color: #fafafa;
+
+    }
+}
+
+@media (max-width: 800px) {
+
+    .campaign-banner {
+        flex-direction: column;
+    }
+
+
+
+
+}
+
+@media (max-width: 500px) {
+
+    .banner-content {
+    padding: 3em 1.5em;
+    }
+
+
+    .banner-content button {
+        width: 100%;
+    }
+
+
+}

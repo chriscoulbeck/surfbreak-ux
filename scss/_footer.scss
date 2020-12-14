@@ -1,22 +1,21 @@
 footer {
-    background-color: #fafafa;
-}
-footer > div {
     display: flex;
-    align-items: flex-end;
+    align-items: flex-start;
     justify-content: space-between;
-    min-height: 100px;
-    padding: 25px;
-    max-width: 1100px;
-    margin: auto;
-    color: #fafafa;
-    & h3 {
-        color: rgb(65, 63, 63);
-        font-size: 16px;
+    background-color: #fafafa;
+    border-top: 1px solid #ddd;
+    padding: 4em 4em 4em 4em;
+    & > div {
+        flex: 1;
     }
-    & span {
-        font-size: 10px;
-    }
+
+}
+
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+
+        margin-bottom: 1.5rem;
 }
 
 .fb-icon {
@@ -24,12 +23,115 @@ footer > div {
     margin-right: 25px;
 }
 
-.soc {
-    font-size: 16px;
-    font-weight: 200;
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex: 1;
+    height: 100%;
+    & ul {
+        display: flex;
+        align-items: center;
+        & li a {
+            margin-right: 2em;
+            font-weight: 400;
+        }
+    }
 }
 
-.footer-nav {
-    display: flex;
-    align-items: center;
+footer ul li {
+    font-size: 14px;
+    display: block;
+    
+    & a {
+        font-weight: 200;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    
+}
+
+@media (max-width: 1000px) {
+
+    footer {
+        padding-top: 3em;
+        & ul li {
+            margin: .5em 0;
+        }
+    }
+
+    .footer-branding {
+        margin-bottom: 1em;
+    }
+
+    .footer-links {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        align-items: flex-end;
+        & ul {
+            flex-direction: column;
+            align-items: flex-end;
+            margin-bottom: 2em;
+            & li a {
+                margin: 0;
+            }
+
+        }
+    }
+
+
+
+}
+
+@media (max-width: 720px) {
+
+    footer {
+        flex-direction: column;
+        & ul li {
+            margin: .5em 0;
+        }
+    }
+
+
+    .footer-links {
+        flex-direction: column;
+        align-items: flex-start;
+        & ul {
+            flex-direction: column;
+            align-items: start;
+            margin-bottom: 2em;
+
+        }
+    }
+
+
+}
+
+@media (max-width: 550px) {
+
+    footer {
+        flex-direction: column;
+        align-items: start;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        
+        & ul {
+            flex-direction: column;
+            align-items: start;
+            margin-bottom: 2em;
+            & li a {
+                margin:.5em 0;
+            }
+        }
+    }
+
 }

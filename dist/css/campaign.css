@@ -1,0 +1,14 @@
+.campaign-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.campaign-card {
+  max-width: 350px;
+}
+
+img {
+  width: 100px;
+}
+/*# sourceMappingURL=campaign.css.map */
